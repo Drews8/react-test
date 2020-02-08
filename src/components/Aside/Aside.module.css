@@ -1,0 +1,4 @@
+.aside{
+    grid-area: aside;
+    border-right: 2px solid #E9EBED
+}
