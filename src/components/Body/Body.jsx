@@ -1,16 +1,21 @@
 import React from "react";
 import style from "./Body.module.css"
-import {BrowserRouter, Route} from "react-router-dom";
+
+import FirstUser from "./FirstUser";
+import SecondUser from "./SecondUser";
+import StartPage from "./StartPage";
+import {Route} from "react-router-dom";
 
 const Body = () => {
     return (
-        <BrowserRouter>
+
         <div className={style.body}>
-            Please select a chat to start messaging
-            <Route />
-            <Route />
+            {/*<Route component={StartPage} path="/"/>*/}
+
+            <Route path="/Mike" component={FirstUser}/>
+            <Route path="/John" component={SecondUser}/>
         </div>
-        </BrowserRouter>
+
     )};
 
 export default Body;

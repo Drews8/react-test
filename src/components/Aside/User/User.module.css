@@ -9,7 +9,19 @@ a{
     display: flex;
     height: 62px;
     padding: 7px 16px;
+
+    color: #000;
+    text-decoration: none;
 }
+.user.active{
+    background: #6490b1;
+    color: #fff;
+}
+.user:active{
+    color: #000;
+}
+
+
 
 .user_img{
     width: 50px;

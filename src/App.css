@@ -14,7 +14,7 @@ body{
 
   display: grid;
   grid-template-columns: 31fr 69fr;
-  grid-template-rows: 48px 48px 1fr;
+  grid-template-rows: 48px 58px 1fr;
   grid-template-areas:
           'header header'
           'search body'

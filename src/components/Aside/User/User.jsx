@@ -1,18 +1,19 @@
 import React from "react"
 import style from "./User.module.css"
+import {NavLink} from "react-router-dom";
 
 const User = props => {
     return (
         <li>
-            <a className={style.user} href={`/${props.name}`}>
+            <NavLink className={style.user} to={`/${props.name}`} activeClassName={style.active}>
                 <div className={style.user_img}>
                     <img src="https://i.imgflip.com/3bkcig.jpg" alt="img"/>
                 </div>
                 <div className={style.user_info}>
-                    {props.name}
+                {props.name}
                 </div>
                 <div className={style.user_time}>today</div>
-            </a>
+            </NavLink>
         </li>
     )
 };
