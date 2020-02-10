@@ -1,8 +1,17 @@
 .body{
     grid-area: body;
+
+
+}
+.body_header{
+    height: 48px;
+    background: #5682a3;
+}
+.body_inner{
+    height: 100%;
+    color: #999;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    color: #999;
 }

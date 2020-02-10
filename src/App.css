@@ -16,7 +16,7 @@ body{
   grid-template-columns: 31fr 69fr;
   grid-template-rows: 48px 58px 1fr;
   grid-template-areas:
-          'header header'
+          'header body'
           'search body'
           'aside body';
   background: #fff;
