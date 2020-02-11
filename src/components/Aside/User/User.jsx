@@ -5,12 +5,12 @@ import {NavLink} from "react-router-dom";
 const User = props => {
     return (
         <li>
-            <NavLink className={style.user} to={`/${props.name}`} activeClassName={style.active}>
+            <NavLink className={style.user} to={`/${props.firstName}${props.lastName}`} activeClassName={style.active}>
                 <div className={style.user_img}>
-                    <img src="https://i.imgflip.com/3bkcig.jpg" alt="img"/>
+                    <img src={props.imgUrl} alt="img"/>
                 </div>
                 <div className={style.user_info}>
-                {props.name}
+                {props.firstName} {props.lastName}
                 </div>
                 <div className={style.user_time}>today</div>
             </NavLink>
