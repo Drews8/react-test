@@ -8,7 +8,8 @@ const Body = props => {
     const StartPage = () => {
         return (
             <div>Please select a chat to start messaging</div>
-        )};
+        )
+    };
 
     const usersDialogs = props.usersData.map(item => {
         return <Route path={`/${item.firstName}${item.lastName}`} render={() => <Dialog userData={item}/>}/>
@@ -16,13 +17,22 @@ const Body = props => {
 
     return (
         <div className={style.body}>
-        <div className={style.body_header} ></div>
-        <div className={style.body_inner}>
-            <Route exact path="/" component={StartPage}/>
-            {usersDialogs}
-
+            <div className={style.body_header}></div>
+            <div className={style.body_inner}>
+                <Route exact path="/" component={StartPage}/>
+                <div>
+                    {usersDialogs}
+                    <form className={style.bottomPanel}>
+                        <input type="text"/>
+                        <button onClick={(event) => {
+                            event.preventDefault();
+                            
+                        }}>send</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        </div>
-    )};
+    )
+};
 
 export default Body;
