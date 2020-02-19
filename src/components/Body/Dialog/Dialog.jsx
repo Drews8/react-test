@@ -2,10 +2,13 @@ import React from "react";
 import style from "./Dialog.module.jsx.css";
 
 const Dialog = props => {
-    console.log(props);
+
+
     return (
         <div className={style.dialogWrapper}>
-            <div>{props.userData.firstName}</div>
+            {props.userData.messages.map((item, index) => {
+                return <div>item</div>
+            })}
         </div>
 
     )

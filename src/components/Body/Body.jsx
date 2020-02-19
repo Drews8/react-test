@@ -3,6 +3,7 @@ import style from "./Body.module.css"
 import {Route} from "react-router-dom";
 import Dialog from "./Dialog/Dialog";
 
+
 const Body = props => {
 
     const StartPage = () => {
@@ -11,7 +12,7 @@ const Body = props => {
         )
     };
 
-    const usersDialogs = props.usersData.map(item => {
+    const usersDialogs = props.state.usersData.map(item => {
         return <Route path={`/${item.firstName}${item.lastName}`} render={() => <Dialog userData={item}/>}/>
     });
 
@@ -23,11 +24,17 @@ const Body = props => {
                 <div>
                     {usersDialogs}
                     <form className={style.bottomPanel}>
-                        <input type="text"/>
+                        <input type="text" onChange={(event) => {
+
+                            props.state.handlerInputText(event.target.value);
+
+                        }}/>
                         <button onClick={(event) => {
                             event.preventDefault();
-                            
-                        }}>send</button>
+
+                        }}>
+                            send
+                        </button>
                     </form>
                 </div>
             </div>

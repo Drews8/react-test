@@ -6,6 +6,8 @@ import Search from "./components/Search/Search";
 import Aside from "./components/Aside/Aside";
 import {BrowserRouter} from "react-router-dom";
 
+
+
 function App(props) {
 
 
@@ -14,8 +16,8 @@ function App(props) {
             <BrowserRouter>
                 <Header/>
                 <Search/>
-                <Aside usersData={props.usersData}/>
-                <Body usersData={props.usersData}/>
+                <Aside usersData={props.state.usersData}/>
+                <Body state={props.state}/>
             </BrowserRouter>
         </div>
     )

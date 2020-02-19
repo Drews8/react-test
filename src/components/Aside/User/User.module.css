@@ -13,6 +13,9 @@ a{
     color: #000;
     text-decoration: none;
 }
+.user_info{
+    font-weight: 700;
+}
 .user.active{
     background: #6490b1;
     color: #fff;
