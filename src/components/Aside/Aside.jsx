@@ -4,14 +4,14 @@ import User from "./User/User";
 
 const Aside = props => {
 
-    const usersItems = props.usersData.map((item) => {
+    /*const usersItems = props.usersData.map((item) => {
         return <User id={item.id} firstName={item.firstName} lastName={item.lastName} imgUrl={item.imgUrl}/>
-    });
+    });*/
 
     return (
     <div className={style.aside}>
         <ul>
-            {usersItems}
+            {/*{usersItems}*/}
         </ul>
     </div>
     )};

@@ -1,15 +1,15 @@
 import React from "react";
-import style from './Header.module.css'
+import classes from './Header.module.css'
 import {NavLink} from "react-router-dom";
 
 const Header = () => {
-    return <div className={style.header}>
-        <div className={style.headerBurger}>
-            <span className={style.burgerItem}></span>
-            <span className={style.burgerItem}></span>
-            <span className={style.burgerItem}></span>
+    return <div className={classes.header}>
+        <div className={classes.headerBurger}>
+            <span className={classes.burgerItem}></span>
+            <span className={classes.burgerItem}></span>
+            <span className={classes.burgerItem}></span>
         </div>
-        <NavLink to="/" className={style.tgLogo}></NavLink>
+        <NavLink to="/" className={classes.tgLogo}></NavLink>
     </div>
 }
 

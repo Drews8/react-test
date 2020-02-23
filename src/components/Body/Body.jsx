@@ -12,17 +12,16 @@ const Body = props => {
         )
     };
 
-    const usersDialogs = props.state.usersData.map(item => {
+    /*const usersDialogs = props.state.usersData.map(item => {
         return <Route path={`/${item.firstName}${item.lastName}`} render={() => <Dialog userData={item}/>}/>
-    });
+    });*/
 
     return (
         <div className={style.body}>
-            <div className={style.body_header}></div>
             <div className={style.body_inner}>
                 <Route exact path="/" component={StartPage}/>
                 <div>
-                    {usersDialogs}
+                    {/*{usersDialogs}*/}
                     <form className={style.bottomPanel}>
                         <input type="text" onChange={(event) => {
 
