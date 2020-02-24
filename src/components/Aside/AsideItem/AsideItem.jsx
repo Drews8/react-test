@@ -1,8 +1,8 @@
 import React from "react"
-import style from "./User.module.css"
+import style from "./AsideItem.module.css"
 import {NavLink} from "react-router-dom";
 
-const User = props => {
+const AsideItem = props => {
     return (
         <li>
             <NavLink className={style.user} to={`/${props.firstName}${props.lastName}`} activeClassName={style.active}>
@@ -18,4 +18,4 @@ const User = props => {
     )
 };
 
-export default User;
+export default AsideItem;

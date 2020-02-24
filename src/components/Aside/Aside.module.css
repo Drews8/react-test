@@ -1,8 +1,27 @@
 ul{
     margin: 0;
     padding: 0;
+    height: calc(100vh - 23px - 47px);
+    overflow: hidden;
+    overflow-y: auto;
 }
-.aside{
-    grid-area: aside;
-    border-right: 2px solid #E9EBED
+.aside {
+
+
 }
+
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #E9EBED;
+}
+
+.aside:hover ::-webkit-scrollbar-thumb{
+    /*background: rgba(30, 85, 127, 0.9);*/
+    opacity: 0.99;
+    background: rgba(30, 85, 127, 0.3);
+}
+
